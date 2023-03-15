@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 export default function AdviceCard() {
 
     useEffect( () => {
-        // handleClick();
+        handleClick();
     }, [])
     const [idTxt, setIdTxt] = useState('117');
     const [advice, setAdvice] = useState("It is easy to sit up and take notice, what's difficult is getting up and taking action.");
@@ -29,7 +29,6 @@ export default function AdviceCard() {
                     <source media="(max-width:700px)" srcset={mobileDivider} />
                     <img src={divider} alt="Divider" className='divImg'/>
                 </picture>
-                {/* <img src={divider} alt="divider" className='divImg'/> */}
             </div>
             <div className="spacer"></div>
             <div onClick={handleClick} className="diceBtn flex justify-center items-center">
