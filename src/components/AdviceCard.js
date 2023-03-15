@@ -1,4 +1,5 @@
 import divider from '../assets/images/pattern-divider-desktop.svg';
+import mobileDivider from '../assets/images/pattern-divider-mobile.svg';
 import dice from '../assets/images/icon-dice.svg';
 import React, { useState, useEffect } from 'react';
 
@@ -24,7 +25,11 @@ export default function AdviceCard() {
             <p className="title">ADVICE #{idTxt}</p>
             <div className="innerCard flex flex-col justify-center items-center">
                 <p className="quote">“{advice}”</p>
-                <img src={divider} alt="divider" className='divImg'/>
+                <picture>
+                    <source media="(max-width:700px)" srcset={mobileDivider} />
+                    <img src={divider} alt="Divider" className='divImg'/>
+                </picture>
+                {/* <img src={divider} alt="divider" className='divImg'/> */}
             </div>
             <div className="spacer"></div>
             <div onClick={handleClick} className="diceBtn flex justify-center items-center">
