@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
 body {
   background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(217, 19%, 24%);
+  min-height: 330px;
+  width: 540px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.innerCard{
+  min-height: 200px;
+  /* padding-bottom: 70px; */
+}
+
+.title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  color: hsl(150, 100%, 66%);
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding-top: 45px;
+}
+
+.quote {
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 25px;
+}
+
+.diceBtn {
+  position: absolute;
+  bottom: -32px;
+  background-color: hsl(150, 100%, 66%);
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.divImg {
+  padding-top: 35px;
+  width: 455px;
+  padding-bottom: 0px;
+}
+
+.spacer {
+  height: 65px;
+}
+
+@media (hover: hover) {
+  .diceBtn:hover {
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+    cursor: pointer;
+  }
+}
+
+@media screen and ( max-height: 700px ) {
+
+  
+
+
 }
